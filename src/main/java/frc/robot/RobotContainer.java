@@ -179,8 +179,15 @@ public class RobotContainer
       driverXbox.back().whileTrue(Commands.none());
       driverXbox.leftBumper().whileTrue(Commands.runOnce(drivebase::lock, drivebase).repeatedly());
       driverXbox.rightBumper().onTrue(Commands.none());
+      // If you used Option 1:
+driverXbox.rightTrigger().whileTrue(
+    drivebase.aimAtTarget(
+        () -> -driverXbox.getLeftY(),
+        () -> -driverXbox.getLeftX()
+    )
+);
     }
-
+     
   }
 
   /**

@@ -35,6 +35,8 @@ import edu.wpi.first.wpilibj2.command.SubsystemBase;
 import edu.wpi.first.wpilibj2.command.button.RobotModeTriggers;
 import edu.wpi.first.wpilibj2.command.sysid.SysIdRoutine.Config;
 import frc.robot.Constants;
+import frc.robot.commands.swervedrive.LimelightHelpers;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.Arrays;
@@ -76,9 +78,9 @@ public class SwerveSubsystem extends SubsystemBase
     Pose2d startingPose = blueAlliance ? new Pose2d(new Translation2d(Meter.of(1),
                                                                       Meter.of(4)),
                                                     Rotation2d.fromDegrees(0))
-                                       : new Pose2d(new Translation2d(Meter.of(16),
+                                       : new Pose2d(new Translation2d(Meter.of(0),
                                                                       Meter.of(4)),
-                                                    Rotation2d.fromDegrees(180));
+                                                    Rotation2d.fromDegrees(0));
     // Configure the Telemetry before creating the SwerveDrive to avoid unnecessary objects being created.
     SwerveDriveTelemetry.verbosity = TelemetryVerbosity.HIGH;
     try
@@ -115,7 +117,7 @@ public class SwerveSubsystem extends SubsystemBase
     swerveDrive = new SwerveDrive(driveCfg,
                                   controllerCfg,
                                   Constants.MAX_SPEED,
-                                  new Pose2d(new Translation2d(Meter.of(2), Meter.of(0)),
+                                  new Pose2d(new Translation2d(Meter.of(10), Meter.of(0)),
                                              Rotation2d.fromDegrees(0)));
   }
 
@@ -213,7 +215,25 @@ public class SwerveSubsystem extends SubsystemBase
    *
    * @return A {@link Command} which will run the alignment.
    */
- 
+ public Command aimAtTarget(DoubleSupplier vX, DoubleSupplier vY) {
+    return run(() -> {
+        double rotationSpeed;
+        
+        // 1. Check if the Limelight sees a target
+        if (LimelightHelpers.getTV("limelight")) {
+            // 2. Use a PID controller to calculate how fast to turn
+            // tx is the horizontal offset from the target
+            double tx = LimelightHelpers.getTX("limelight");
+            rotationSpeed = tx * 0.04; // Simple 'P' gain; adjust 0.04 as needed
+        } else {
+            // 3. If no target, don't rotate (or let driver rotate)
+            rotationSpeed = 0; 
+        }
+
+        // 4. Drive: vX and vY come from the driver sticks, rotation comes from Limelight
+        this.drive(new Translation2d(vX.getAsDouble(), vY.getAsDouble()), rotationSpeed, true);
+    });
+}
   /**
    * Get the path follower with events.
    *
