@@ -78,7 +78,7 @@ public class SwerveSubsystem extends SubsystemBase
     Pose2d startingPose = blueAlliance ? new Pose2d(new Translation2d(Meter.of(1),
                                                                       Meter.of(4)),
                                                     Rotation2d.fromDegrees(0))
-                                       : new Pose2d(new Translation2d(Meter.of(0),
+                                       : new Pose2d(new Translation2d(Meter.of(14),
                                                                       Meter.of(4)),
                                                     Rotation2d.fromDegrees(0));
     // Configure the Telemetry before creating the SwerveDrive to avoid unnecessary objects being created.
