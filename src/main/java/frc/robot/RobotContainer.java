@@ -199,7 +199,7 @@ driverXbox.rightTrigger().whileTrue(
   public Command getAutonomousCommand()
   {
     // An example command will be run in autonomous
-    return drivebase.getAutonomousCommand("Center Shoot");
+    return drivebase.getAutonomousCommand("New Auto");
   }
 
   public void setMotorBrake(boolean brake)

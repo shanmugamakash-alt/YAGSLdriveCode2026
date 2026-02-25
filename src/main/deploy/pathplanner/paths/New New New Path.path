@@ -1,0 +1,145 @@
+{
+  "version": "2025.0",
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 8.241663099657133,
+        "y": 4.020338763637115
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 7.91260936710868,
+        "y": 4.896346537188532
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 7.112316350446024,
+        "y": 6.627396122670551
+      },
+      "prevControl": {
+        "x": 7.749819061458874,
+        "y": 6.040076713391909
+      },
+      "nextControl": {
+        "x": 6.620142848086406,
+        "y": 7.080826430769467
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 4.533664001537794,
+        "y": 7.369165836308732
+      },
+      "prevControl": {
+        "x": 5.410373137486018,
+        "y": 7.3570424267968
+      },
+      "nextControl": {
+        "x": 3.8487030964932023,
+        "y": 7.37863769101062
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 2.438547807387224,
+        "y": 6.78520572450805
+      },
+      "prevControl": {
+        "x": 2.8153712081329516,
+        "y": 7.22833570612069
+      },
+      "nextControl": {
+        "x": 2.276595056478538,
+        "y": 6.594755451541301
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 2.234150268336314,
+        "y": 5.0004114490161
+      },
+      "prevControl": {
+        "x": 2.0962970816407354,
+        "y": 6.3690152503585855
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": null
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [],
+  "pointTowardsZones": [],
+  "eventMarkers": [
+    {
+      "name": "",
+      "waypointRelativePos": 0,
+      "endWaypointRelativePos": null,
+      "command": null
+    },
+    {
+      "name": "Start Shooter",
+      "waypointRelativePos": 4.0,
+      "endWaypointRelativePos": null,
+      "command": {
+        "type": "sequential",
+        "data": {
+          "commands": [
+            {
+              "type": "wait",
+              "data": {
+                "waitTime": 3.0
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Stop Shooter",
+      "waypointRelativePos": 4.0,
+      "endWaypointRelativePos": null,
+      "command": {
+        "type": "sequential",
+        "data": {
+          "commands": [
+            {
+              "type": "wait",
+              "data": {
+                "waitTime": 5.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 5.0,
+    "maxAcceleration": 3.0,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0,
+    "nominalVoltage": 12.0,
+    "unlimited": false
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": 0.0
+  },
+  "reversed": false,
+  "folder": null,
+  "idealStartingState": {
+    "velocity": 0,
+    "rotation": 0.0
+  },
+  "useDefaultConstraints": true
+}
