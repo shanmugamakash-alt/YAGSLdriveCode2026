@@ -106,6 +106,15 @@ public class RobotContainer
     defaultCommands();
         
   }
+<<<<<<< Updated upstream
+=======
+
+  public HoodSubsystem GetHoodSubsystem() {
+    return HoodSubsystem;
+  }
+    
+  private void defaultCommands() {
+>>>>>>> Stashed changes
 
   public HoodSubsystem GetHoodSubsystem() {
     return HoodSubsystem;

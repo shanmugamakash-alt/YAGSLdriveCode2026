@@ -3,15 +3,6 @@
   "waypoints": [
     {
       "anchor": {
-<<<<<<< Updated upstream
-        "x": 8.241663099657133,
-        "y": 4.020338763637115
-      },
-      "prevControl": null,
-      "nextControl": {
-        "x": 7.91260936710868,
-        "y": 4.896346537188532
-=======
         "x": 2.782811387900357,
         "y": 5.901720047449585
       },
@@ -19,105 +10,30 @@
       "nextControl": {
         "x": 1.2872835112692769,
         "y": 5.9124792408066424
->>>>>>> Stashed changes
       },
       "isLocked": false,
       "linkedName": null
     },
     {
       "anchor": {
-<<<<<<< Updated upstream
-        "x": 7.022710371855329,
-        "y": 6.972943656292257
-      },
-      "prevControl": {
-        "x": 8.115900173833943,
-        "y": 6.008576034318136
-      },
-      "nextControl": {
-        "x": 6.314143677725209,
-        "y": 7.5980124015289565
-      },
-      "isLocked": false,
-      "linkedName": null
-    },
-    {
-      "anchor": {
-        "x": 4.586833631484795,
-        "y": 7.450447227191413
-      },
-      "prevControl": {
-        "x": 5.463542767433019,
-        "y": 7.438323817679481
-      },
-      "nextControl": {
-        "x": 3.901872726440203,
-        "y": 7.4599190818933
-      },
-      "isLocked": false,
-      "linkedName": null
-    },
-    {
-      "anchor": {
-        "x": 2.480060903106283,
-        "y": 6.972943656292257
-      },
-      "prevControl": {
-        "x": 2.903232678767327,
-        "y": 7.5043686768898485
-      },
-      "nextControl": {
-        "x": 2.109542249345535,
-        "y": 6.507641160871781
-      },
-      "isLocked": false,
-      "linkedName": null
-    },
-    {
-      "anchor": {
-        "x": 1.7675073903902585,
-        "y": 5.098346563903249
-      },
-      "prevControl": {
-        "x": 1.9741726761782106,
-        "y": 5.816754462118513
-=======
         "x": 0.5664175563444058,
         "y": 5.901720047449585
       },
       "prevControl": {
         "x": 2.5999051008283915,
         "y": 5.901720047452038
->>>>>>> Stashed changes
       },
       "nextControl": null,
       "isLocked": false,
       "linkedName": null
     }
   ],
-<<<<<<< Updated upstream
-  "rotationTargets": [
-    {
-      "waypointRelativePos": 0.8977955911823651,
-      "rotationDegrees": -48.416241613418975
-    },
-    {
-      "waypointRelativePos": 1.899799599198398,
-      "rotationDegrees": -41.0788521670508
-    }
-  ],
-=======
   "rotationTargets": [],
->>>>>>> Stashed changes
   "constraintZones": [],
   "pointTowardsZones": [],
   "eventMarkers": [],
   "globalConstraints": {
-<<<<<<< Updated upstream
-    "maxVelocity": 5.0,
-=======
     "maxVelocity": 3.0,
->>>>>>> Stashed changes
     "maxAcceleration": 3.0,
     "maxAngularVelocity": 540.0,
     "maxAngularAcceleration": 720.0,
@@ -126,21 +42,13 @@
   },
   "goalEndState": {
     "velocity": 0,
-<<<<<<< Updated upstream
-    "rotation": 0.0
-=======
     "rotation": -179.3179396068259
->>>>>>> Stashed changes
   },
   "reversed": false,
   "folder": null,
   "idealStartingState": {
     "velocity": 0,
-<<<<<<< Updated upstream
-    "rotation": 0.0
-=======
     "rotation": -178.63607246839715
->>>>>>> Stashed changes
   },
   "useDefaultConstraints": true
 }

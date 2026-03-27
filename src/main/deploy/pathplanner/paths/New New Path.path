@@ -3,15 +3,6 @@
   "waypoints": [
     {
       "anchor": {
-<<<<<<< Updated upstream
-        "x": 1.6440301871932341,
-        "y": 4.047783557115078
-      },
-      "prevControl": null,
-      "nextControl": {
-        "x": 1.8578858177046431,
-        "y": 5.346139511794554
-=======
         "x": 8.27,
         "y": 4.035
       },
@@ -19,25 +10,12 @@
       "nextControl": {
         "x": 8.248481613285884,
         "y": 6.289051008303677
->>>>>>> Stashed changes
       },
       "isLocked": false,
       "linkedName": null
     },
     {
       "anchor": {
-<<<<<<< Updated upstream
-        "x": 2.146789708673556,
-        "y": 6.818331819690436
-      },
-      "prevControl": {
-        "x": 1.3887277238954285,
-        "y": 6.125928746979707
-      },
-      "nextControl": {
-        "x": 2.7794276594050227,
-        "y": 7.39617435736642
-=======
         "x": 4.579596678529064,
         "y": 7.483321470937129
       },
@@ -48,60 +26,18 @@
       "nextControl": {
         "x": 3.045074997476201,
         "y": 7.5082056063055544
->>>>>>> Stashed changes
       },
       "isLocked": false,
       "linkedName": null
     },
     {
       "anchor": {
-<<<<<<< Updated upstream
-        "x": 4.4920110797820785,
-        "y": 7.487890958601187
-      },
-      "prevControl": {
-        "x": 3.559132741749562,
-        "y": 7.495236457325853
-      },
-      "nextControl": {
-        "x": 5.2500730645602065,
-        "y": 7.48192196659506
-      },
-      "isLocked": false,
-      "linkedName": null
-    },
-    {
-      "anchor": {
-        "x": 7.546184846781232,
-        "y": 6.622951699463328
-      },
-      "prevControl": {
-        "x": 6.66722269946588,
-        "y": 7.4188934122740395
-      },
-      "nextControl": {
-        "x": 8.345957151925699,
-        "y": 5.898720126625334
-      },
-      "isLocked": false,
-      "linkedName": null
-    },
-    {
-      "anchor": {
-        "x": 8.27014688882767,
-        "y": 4.047783557115078
-      },
-      "prevControl": {
-        "x": 8.159470700997625,
-        "y": 5.359591170160233
-=======
         "x": 3.0840688018979834,
         "y": 7.074472123368921
       },
       "prevControl": {
         "x": 3.3100118623962045,
         "y": 7.483321470937129
->>>>>>> Stashed changes
       },
       "nextControl": null,
       "isLocked": false,
@@ -113,11 +49,7 @@
   "pointTowardsZones": [],
   "eventMarkers": [],
   "globalConstraints": {
-<<<<<<< Updated upstream
-    "maxVelocity": 5.0,
-=======
     "maxVelocity": 3.0,
->>>>>>> Stashed changes
     "maxAcceleration": 3.0,
     "maxAngularVelocity": 540.0,
     "maxAngularAcceleration": 720.0,
@@ -132,11 +64,7 @@
   "folder": null,
   "idealStartingState": {
     "velocity": 0,
-<<<<<<< Updated upstream
-    "rotation": 0.0
-=======
     "rotation": -78.83511982245142
->>>>>>> Stashed changes
   },
   "useDefaultConstraints": true
 }
