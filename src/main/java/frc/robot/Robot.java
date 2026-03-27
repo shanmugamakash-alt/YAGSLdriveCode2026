@@ -4,6 +4,18 @@
 
 package frc.robot;
 
+<<<<<<< Updated upstream
+=======
+import static edu.wpi.first.units.Units.Degrees;
+
+import edu.wpi.first.math.geometry.Pose2d;
+import edu.wpi.first.math.geometry.Pose3d;
+import edu.wpi.first.math.geometry.Rotation3d;
+import edu.wpi.first.math.geometry.Translation3d;
+import edu.wpi.first.networktables.NetworkTableInstance;
+import edu.wpi.first.networktables.StructArrayPublisher;
+import edu.wpi.first.networktables.StructPublisher;
+>>>>>>> Stashed changes
 import edu.wpi.first.wpilibj.DriverStation;
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj.Timer;
@@ -38,6 +50,20 @@ public class Robot extends TimedRobot
   /**
    * This function is run when the robot is first started up and should be used for any initialization code.
    */
+<<<<<<< Updated upstream
+=======
+
+  // public final Field2d m_field = new Field2d();
+
+  private final double targetHeight = 1.5;
+  private final Translation3d targetPos = new Translation3d(11.9, 4.05, targetHeight);
+  private StructPublisher<Pose3d> targetPublisher;
+
+  private StructPublisher<Pose3d> posePublisher;
+  private StructArrayPublisher<Pose3d> redGoalPublisher;
+
+
+>>>>>>> Stashed changes
   @Override
   public void robotInit()
   {
